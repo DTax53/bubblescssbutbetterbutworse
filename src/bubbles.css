@@ -299,10 +299,7 @@
             align-self: end !important;
         }
         .visualMediaItemContainer_f4758a, .f4758a8d6346d18b-visualMediaItemContainer {
-            display: grid;
-            justify-content: end !important;
-            >div {
-                width: calc(100%);
+            width: auto;
         }
 
         &.c19a557985eb7793-hasReply, &.hasReply_c19a55 {
