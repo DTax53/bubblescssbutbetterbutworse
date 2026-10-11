@@ -202,6 +202,7 @@ AI didn't generate the code for me. */
         width: fit-content;
         max-width: 100%;
         overflow-wrap: anywhere;
+        float: right;
     }
     [class*="avatar_"] {
         left: auto !important;
