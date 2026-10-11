@@ -204,6 +204,11 @@ AI didn't generate the code for me. */
         overflow-wrap: anywhere;
         float: right;
     }
+    
+    [class*="file__"] {
+       float: right;
+    }
+
     [class*="avatar_"] {
         left: auto !important;
         right: var(--custom-message-margin-horizontal);
