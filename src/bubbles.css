@@ -1,5 +1,19 @@
+/* AI DISCLAIMER: The following comment is AI-generated and may be inaccurate. 
+So is the replacement of the hashed class names with attribute selectors. 
+Please verify whether this functions before using it in production. 
+Or, don't use it at all, because 'AI Stinky'. I don't know.
+P.S: Everything else is human made. Seriously. Atleast, AFAIK. I know my changes are. I know Mo's changes are.
+That's basically everything.*/
+
+/* CLASS NAME NOTE: Discord's class names end in a hash that may change (e.g. .contents_c19a55).
+   Hashed classes are replaced with [class*="name_"] attribute selectors, which match on the stable
+   part of the name only. A few selectors are left hashed on purpose (container__*, content__122e4,
+   button__201d5, grid__623de, container_b7e1cb) because their base names are shared by several
+   unrelated elements, so the hash is the only thing telling them apart. If those break after an
+   update, they're the ones to re-inspect. */
+
 /* MESSAGES  - - - - - - - - - - - - - - - - - - - - - */
-.c19a557985eb7793-contents>.c19a557985eb7793-messageContent, .contents_c19a55>.messageContent_c19a55 {
+[class*="contents_"]>[class*="messageContent_"] {
     background-color: var(--bubblescss-otherbubblecolour);
     width: fit-content;
     margin-left: 0px !important;
@@ -11,22 +25,22 @@
     overflow-wrap: anywhere;
 }
 
-._5126c0cd07f243a0-groupStart .c19a557985eb7793-messageContent, .groupStart__5126c .messageContent_c19a55 {
+[class*="groupStart__"] [class*="messageContent_"] {
     border-radius: 10px 10px 10px 0px;
 }
 
-.c19a557985eb7793-repliedTextPreview > .c19a557985eb7793-messageContent, .repliedTextPreview_c19a55 > .messageContent_c19a55 {
+[class*="repliedTextPreview_"] > [class*="messageContent_"] {
     border-radius: 0px;
 }
 
-._5126c0cd07f243a0-message, .message__5126c {
+[class*="message__"] {
     /* position: absolute; */
     max-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
     min-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
     padding: 2px 64px !important;
 }
 
-.c19a557985eb7793-contents, .contents_c19a55 {
+[class*="contents_"] {
     /* position: absolute; */
     max-width: calc(100%) !important;
     min-width: calc(100%) !important;
@@ -34,17 +48,19 @@
     overflow-wrap: anywhere;
 }
 
-.c19a557985eb7793-buttonContainer, .buttonContainer_c19a55 {
+[class*="buttonContainer_"] {
     right: 20px;
-    ._040f07d21e1fb0d6-container, .container__040f0 {
+    .container__040f0 {
         padding: 0 64px;
         right: -20px;
     }
 }
-._752971923a1e6683-markup blockquote, .markup__75297 blockquote, ._752971923a1e6683-markup pre, .markup__75297 pre {
+[class*="markup__"] blockquote, [class*="markup__"] pre {
     max-width: 100% !important;
 }
 
+
+/* Hi, what is this? - Taxy*/
 /*
   ._23977d5b7cef7361-reactions, .reactions__23977 {
     margin-bottom: -12px;
@@ -150,14 +166,13 @@
     }
   }
   */
-._23977d5b7cef7361-reactionInner[aria-label*=", 1 "] ._23977d5b7cef7361-reactionCount,
-.reactionInner__23977[aria-label*=", 1 "] .reactionCount__23977 {
+[class*="reactionInner__"][aria-label*=", 1 "] [class*="reactionCount__"] {
     display: none !important;
 }
 
-._5126c0cd07f243a0-messageListItem[data-is-self="true"], .messageListItem__5126c[data-is-self="true"] {
-    ._5126c0cd07f243a0-message, .message__5126c {
-        .c19a557985eb7793-contents>.c19a557985eb7793-messageContent, .contents_c19a55>.messageContent_c19a55 {
+[class*="messageListItem__"][data-is-self="true"] {
+    [class*="message__"] {
+        [class*="contents_"]>[class*="messageContent_"] {
             background-color: var(--bubblescss-selfbubblecolour);
         }
     }
@@ -165,28 +180,42 @@
 
 /* the following CSS has been made by my friend DreariestTax53. all credits to him i'm just stealing it >:3c */
 /* No idea why I had '.c19a557985eb7793-contents:has([id^="message-content-Uploader"])' in my query considering it
-literally does not exist in the DOM, so it has been removed. */
-.wrapper_c19a55:has([id^="message-content-Uploader"]) {
+literally does not exist in the DOM, so it has been removed. - Taxy*/
+
+/* AI DISCLAIMER: The following content is AI-assisted (through quizzing me), but I have checked it. 
+AI didn't generate the code for me. */
+[class*="wrapper_"]:has([id^="message-content-Uploader"]) {
     /* Hey, look I finally fixed this damn padding! */
     padding-inline-end: 64px;
 
-    .messageContent_c19a55 { /*.c19a557985eb7793-messageContent, */
-        border-radius: 10px 10px 0px 10px !important;
-        background-color: var(--bubblescss-selfbubblecolour) !important;
+    [class*="messageContent_"] {
+        background: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
     }
-    .avatar_c19a55 { /*.c19a557985eb7793-avatar, */
+
+    [class*="messageContent_"] > [class*="content__"] {
+        background-color: var(--bubblescss-selfbubblecolour);
+        border-radius: 10px 10px 0 10px;
+        padding: var(--bubblescss-bubblepadding);
+        box-sizing: content-box;
+        width: fit-content;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+    [class*="avatar_"] {
         left: auto !important;
         right: var(--custom-message-margin-horizontal);
     }
 
-    .avatarDecoration_c19a55 { /*.c19a557985eb7793-avatarDecoration, */
+    [class*="avatarDecoration_"] {
         left: auto !important;
         right: calc(var(--custom-message-margin-horizontal) - var(--custom-message-avatar-decoration-size) / 2 + var(--custom-message-avatar-size) / 2);
     }
 }
 
 /* FORWARDS - - - - - - - - - - - - - - - - - - - - - - */
-._122e465d2e663859-content>*, .content__122e4>* {
+.content__122e4>* {
     background-color: var(--bubblescss-forwardbubblecolour);
     width: fit-content;
     margin-left: 0px !important;
@@ -194,18 +223,18 @@ literally does not exist in the DOM, so it has been removed. */
     padding: var(--bubblescss-bubblepadding) !important;
     box-sizing: content-box;
     word-wrap: break-word;
-    span, code, .embedAuthorName__623de, ::marker, .blockquoteDivider__75297, .grid__623de div {
+    span, code, [class*="embedAuthorName__"], ::marker, [class*="blockquoteDivider__"], .grid__623de div {
         color: var(--bubblescss-forwardtextcolour) !important;
     }
     a span {
         color: var(--bubblescss-forwardlinkcolour) !important;
     }
-    .container__60fa3, .embed__623de, .button__201d5, code, .blockquoteDivider__75297 {
+    .container__60fa3, [class*="embed__"], .button__201d5, code, [class*="blockquoteDivider__"] {
         background-color: var(--bubblescss-forwardembedcolour);
     }
 }
-._122e465d2e663859-container, .container__122e4 {
-    .quote__122e4 {
+.container__122e4 {
+    [class*="quote__"] {
     background-color: rgba(0,0,0,0) !important;
     border-radius: 0px !important;
     width: 0px !important;
@@ -213,8 +242,8 @@ literally does not exist in the DOM, so it has been removed. */
     margin-inline-end: 0px !important;
     }
 }
-._122e465d2e663859-content, .content__122e4 {
-    ._122e465d2e663859-headerContainer, .headerContainer__122e4 {
+.content__122e4 {
+    [class*="headerContainer__"] {
     width: fit-content;
     background-color: var(--bubblescss-forwardiconcolour);
     border-radius: 10px 10px 10px 0px;
@@ -223,7 +252,7 @@ literally does not exist in the DOM, so it has been removed. */
         fill: var(--bubblescss-forwardtextcolour) !important;
         }
     }
-    .c19a557985eb7793-messageContent, .messageContent_c19a55{
+    [class*="messageContent_"] {
         border-radius: 0px 10px 10px 0px;
     }
     .container_b7e1cb {
@@ -240,7 +269,7 @@ literally does not exist in the DOM, so it has been removed. */
             min-width: unset;
         }
     }
-    .footerContainer__122e4 {
+    [class*="footerContainer__"] {
     width: fit-content;
     background-color: var(--bubblescss-forwardlinkcolour);
     border-radius: 0px 10px 10px 10px;
@@ -248,35 +277,35 @@ literally does not exist in the DOM, so it has been removed. */
         fill: var(--bubblescss-forwardtextcolour) !important;
         }
     }
-    .headerText__122e4, .footerText__122e4 {
+    [class*="headerText__"], [class*="footerText__"] {
         font-weight: inherit;
         color: var(--bubblescss-forwardtextcolour) !important;
     }
 }
 
 /* SELF BUBBLES THAT ALIGN RIGHT- - - - - - - - - - - - */
-._5126c0cd07f243a0-messageListItem[data-is-self="true"], .messageListItem__5126c[data-is-self="true"] {
+[class*="messageListItem__"][data-is-self="true"] {
     align-items: end;
     align-content: end;
     justify-content: end;
     justify-items: end;
     
-    ._5126c0cd07f243a0-groupStart .c19a557985eb7793-messageContent, .groupStart__5126c .messageContent_c19a55 {
+    [class*="groupStart__"] [class*="messageContent_"] {
         border-radius: 10px 10px 0px 10px !important; /* mo you goofball how did you goof this up */
     }
 
-    ._5126c0cd07f243a0-message, .message__5126c {
+    [class*="message__"] {
             /* position: absolute; */
             max-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
             min-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
             padding: 2px 64px !important;
 
-        .c19a557985eb7793-header, .header_c19a55 {
+        [class*="header_"] {
             text-align: right;
             width: 100%;
         }
         
-        .c19a557985eb7793-contents, .contents_c19a55 {
+        [class*="contents_"] {
             /* position: absolute; */
             max-width: calc(100%) !important;
             min-width: calc(100%) !important;
@@ -284,35 +313,34 @@ literally does not exist in the DOM, so it has been removed. */
             display: grid;
         }
         
-        .c19a557985eb7793-contents>.c19a557985eb7793-messageContent:not([id^="message-content-Uploader"]),
-        .contents_c19a55>.messageContent_c19a55:not([id^="message-content-Uploader"]) {
+        [class*="contents_"]>[class*="messageContent_"]:not([id^="message-content-Uploader"]) {
             border-radius: 10px 0px 0px 10px;
             overflow-wrap: anywhere;
         }
 
-        .c19a557985eb7793-avatar, .avatar_c19a55 {
+        [class*="avatar_"] {
             left: auto !important;
             right: var(--custom-message-margin-horizontal);
         }
 
-        .c19a557985eb7793-avatarDecoration, .avatarDecoration_c19a55 {
+        [class*="avatarDecoration_"] {
             left: auto !important;
             right: calc(var(--custom-message-margin-horizontal) - var(--custom-message-avatar-decoration-size) / 2 + var(--custom-message-avatar-size) / 2);
         }
 
-        .container_b7e1cb>*, .b7e1cb0370c2dd0e-container>* {
+        .container_b7e1cb>* {
             justify-self: end !important;
             align-self: end !important;
         }
-        .visualMediaItemContainer_f4758a, .f4758a8d6346d18b-visualMediaItemContainer {
+        [class*="visualMediaItemContainer_"] {
             width: auto;
         }
 
-        &.c19a557985eb7793-hasReply, &.hasReply_c19a55 {
+        &[class*="hasReply_"] {
             padding-top: 22px !important;
         }
 
-        .c19a557985eb7793-repliedMessage, .repliedMessage_c19a55 {
+        [class*="repliedMessage_"] {
             position: absolute;
             flex-direction: row;
             top: 0px;
@@ -322,7 +350,7 @@ literally does not exist in the DOM, so it has been removed. */
             max-width: calc(100% - var(--custom-guild-list-width)* 2 + 0.15rem);
         }
 
-        .c19a557985eb7793-repliedMessageClickableSpine, .repliedMessageClickableSpine_c19a55 {
+        [class*="repliedMessageClickableSpine_"] {
             right: calc(var(--chat-avatar-size) / 2 * -1 + var(--gutter) * -1 - 4px);
             left: 100%;
             border-right: var(--spine-width) solid var(--spine-default);
@@ -336,28 +364,28 @@ literally does not exist in the DOM, so it has been removed. */
         }
     }
 
-        .c19a557985eb7793-buttonContainer, .buttonContainer_c19a55 {
+        [class*="buttonContainer_"] {
             /* right: auto; */
             left: 0;
 
-            ._040f07d21e1fb0d6-container, .container__040f0 {
+            .container__040f0 {
             padding: 0 64px;
             right: auto;
             left: 0px;
         }
     }
 
-    ._23977d5b7cef7361-reactions, .reactions__23977 {
+    [class*="reactions__"] {
         align-content: flex-end;
         justify-content: flex-end;
     }
 }
 
-.c19a557985eb7793-repliedTextContent, .repliedTextContent_c19a55 {
+[class*="repliedTextContent_"] {
     border-radius: 0px;
 }
 /* the following CSS has been made by my friend DreariestTax53. all credits to him i'm just stealing it >:3c */
-.c19a557985eb7793-contents:has([id^="message-content-Uploader"]), .contents_c19a55:has([id^="message-content-Uploader"]) {
+[class*="contents_"]:has([id^="message-content-Uploader"]) {
     align-items: end;
     align-content: end;
     justify-content: end;
@@ -365,21 +393,21 @@ literally does not exist in the DOM, so it has been removed. */
 }
 
 /* FORWARDS SENT BY SELF WILL ALIGN RIGHT - - - - - - - */
-._5126c0cd07f243a0-messageListItem[data-is-self="true"], .messageListItem__5126c[data-is-self="true"] {
-    ._122e465d2e663859-content>*, .content__122e4>* {
+[class*="messageListItem__"][data-is-self="true"] {
+    .content__122e4>* {
         align-self: flex-end;
         align-items: flex-end;
         align-content: end;
         justify-content: end;
     }
-    ._122e465d2e663859-content, .content__122e4 {
-        ._122e465d2e663859-headerContainer, .headerContainer__122e4 {
+    .content__122e4 {
+        [class*="headerContainer__"] {
             border-radius: 10px 10px 0px 10px;
         }
-        .c19a557985eb7793-messageContent, .messageContent_c19a55 {
+        [class*="messageContent_"] {
             border-radius: 10px 10px 0px 10px;
         }
-        .b7e1cb0370c2dd0e-container, .container_b7e1cb {
+        .container_b7e1cb {
             margin-top: 0px;
             border-radius: 10px 0px 0px 10px;
             align-items: end;
@@ -387,7 +415,7 @@ literally does not exist in the DOM, so it has been removed. */
             justify-content: end;
             justify-items: end;
         }
-        ._122e465d2e663859-footerContainer, .footerContainer__122e4 {
+        [class*="footerContainer__"] {
             border-radius: 10px 0px 10px 10px;
         }
     }
