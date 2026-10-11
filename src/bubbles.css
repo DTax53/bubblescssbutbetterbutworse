@@ -338,8 +338,8 @@ AI didn't generate the code for me. */
             justify-self: end !important;
             align-self: end !important;
         }
-        [class*="visualMediaItemContainer_"] {
-            width: auto;
+        [class*="visualMediaItemContainer_"]>div {
+            float: right;
         }
 
         &[class*="hasReply_"] {
