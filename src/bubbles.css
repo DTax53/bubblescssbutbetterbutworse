@@ -48,7 +48,7 @@ That's basically everything.*/
     overflow-wrap: anywhere;
 }
 
-[class*="buttonContainer_"] {
+[class*="buttonContainer_"]:not([class*="buttonContainer__"]) {
     right: 20px;
     .container__040f0 {
         padding: 0 64px;
