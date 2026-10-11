@@ -40,7 +40,7 @@ That's basically everything.*/
     padding: 2px 64px !important;
 }
 
-[class*="contents_"] {
+[class*="messageListItem__"] [class*="contents_"] {
     /* position: absolute; */
     max-width: calc(100%) !important;
     min-width: calc(100%) !important;
