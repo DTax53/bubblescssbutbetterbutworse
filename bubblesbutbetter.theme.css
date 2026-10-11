@@ -1,12 +1,12 @@
 /**
- * @name bubbles.css but better (experimental dt53 breakage edition)
- * @author momerob thiger a.k.a. modraws (feat. tax)
- * @version 1.1.0
+ * @name bubbles.css but better
+ * @author blade04208, mohisha thiger, dtax53
+ * @version 2.0.whatever
  * @description i liked the bubbles but i thought they could be better
  * @source https://github.com/modraws/bubblescssbutbetter
  */
 
-@import url("https://raw.githubusercontent.com/DTax53/bubblescssbutbetterbutworse/refs/heads/main/src/bubbles.css");
+@import url("https://raw.githubusercontent.com/modraws/bubblescssbutbetter/refs/heads/main/src/bubbles.css");
 
 :root {
 	--bubblescss-otherbubblecolour: var(--background-mod-subtle);
