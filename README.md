@@ -2,14 +2,14 @@
 # bubbles.css but better (but worse)
 ### by the Me (nah jk)
 
-# AI DISCLAIMER: AI WAS USED TO HELP ME BECAUSE IF IMA BE FR IDK CSS PROPERTIES N SHIIIII. I WROTE THE CODE MYSELF THOUGH SO TAKE THAT AS YOU WILL DEPENDING ON WHERE YOU DRAW THE LINE AT THAT OR SOMETHING. THANK YOU. PLEASE DON'T KILL ME AND MY FAMILY.
+# AI DISCLAIMER: AI WAS USED TO HELP ME BECAUSE IF IMA BE FR IDK CSS PROPERTIES N SHIIIII (EVREN THO I ONLY USED AI FOR THE HTML PARSING,,,). I WROTE THE CODE MYSELF THOUGH SO TAKE THAT AS YOU WILL DEPENDING ON WHERE YOU DRAW THE LINE AT THAT OR SOMETHING. THANK YOU. PLEASE DON'T KILL ME AND MY FAMILY.
 
 ## Changes:
 - Fixed some really odd change with the first user sent bubble where the corners were incorrectly rounded (how)
 - Finally made the file uploading POS actually match the damn theme properly :3 (AI was used to save time by reading out the HTML for me, and basically hinting at things... I've written the code myself)
 
 ## WIP:
-~~- Fix the reply lines being on the Wrong Side~~ cough cough What no there's no WIP go home everyone pack up already
+- Edit up forwards bubbles to look a bit less weird (potentially means editing that genuinely abrasive colour scheme to provide better contrast, sorry mo :^{)
 
 # Original Readme contents:
 
