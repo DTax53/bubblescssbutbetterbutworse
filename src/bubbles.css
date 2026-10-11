@@ -164,16 +164,22 @@
 }
 
 /* the following CSS has been made by my friend DreariestTax53. all credits to him i'm just stealing it >:3c */
-.c19a557985eb7793-contents:has([id^="message-content-Uploader"]), .contents_c19a55:has([id^="message-content-Uploader"]) {
-    .c19a557985eb7793-messageContent, .messageContent_c19a55 {
-        border-radius: 10px !important;
+/* No idea why I had '.c19a557985eb7793-contents:has([id^="message-content-Uploader"])' in my query considering it
+literally does not exist in the DOM, so it has been removed. */
+.wrapper_c19a55:has([id^="message-content-Uploader"]) {
+    /* Hey, look I finally fixed this damn padding! */
+    padding-inline-end: 64px;
+
+    .messageContent_c19a55 { /*.c19a557985eb7793-messageContent, */
+        border-radius: 10px 10px 0px 10px !important;
+        background-color: var(--bubblescss-selfbubblecolour) !important;
     }
-    .c19a557985eb7793-avatar, .avatar_c19a55 {
+    .avatar_c19a55 { /*.c19a557985eb7793-avatar, */
         left: auto !important;
         right: var(--custom-message-margin-horizontal);
     }
 
-    .c19a557985eb7793-avatarDecoration, .avatarDecoration_c19a55 {
+    .avatarDecoration_c19a55 { /*.c19a557985eb7793-avatarDecoration, */
         left: auto !important;
         right: calc(var(--custom-message-margin-horizontal) - var(--custom-message-avatar-decoration-size) / 2 + var(--custom-message-avatar-size) / 2);
     }
