@@ -182,7 +182,7 @@ That's basically everything.*/
 /* No idea why I had '.c19a557985eb7793-contents:has([id^="message-content-Uploader"])' in my query considering it
 literally does not exist in the DOM, so it has been removed. - Taxy*/
 
-/* AI DISCLAIMER: The following content is AI-assisted (through quizzing me), but I have checked it. 
+/* AI DISCLAIMER: The following content is AI-assisted (through quizzing me and parsing HTML), but I have checked it. 
 AI didn't generate the code for me. */
 [class*="wrapper_"]:has([id^="message-content-Uploader"]) {
     /* Hey, look I finally fixed this damn padding! */

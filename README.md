@@ -1,5 +1,17 @@
 
-# bubbles.css but better
+# bubbles.css but better (but worse)
+### by the Me (nah jk)
+
+# AI DISCLAIMER: AI WAS USED TO HELP ME BECAUSE IF IMA BE FR IDK CSS PROPERTIES N SHIIIII. I WROTE THE CODE MYSELF THOUGH SO TAKE THAT AS YOU WILL DEPENDING ON WHERE YOU DRAW THE LINE AT THAT OR SOMETHING. THANK YOU. PLEASE DON'T KILL ME AND MY FAMILY.
+
+## Changes:
+- Fixed some really odd change with the first user sent bubble where the corners were incorrectly rounded (how)
+- Finally made the file uploading POS actually match the damn theme properly :3 (AI was used to save time by reading out the HTML for me, and basically hinting at things... I've written the code myself)
+
+## WIP:
+- Fix the reply lines being on the Wrong Side
+
+# Original Readme contents:
 
 honestly i really like the bubbles.css file that Blade04208 created, and i use it religiously all the time, but i kinda felt like making a few adjustments to it because idk i'm just a crybaby who wants everything perfect  
 i made the bubbles a bit taller, changed embeds so they actually adhere to proper margins, and created a left-aligned variant for the people that prefer that
