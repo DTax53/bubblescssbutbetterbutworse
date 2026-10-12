@@ -1,17 +1,3 @@
-/* AI DISCLAIMER: The following comment is AI-generated and may be inaccurate. 
-So is the replacement of the hashed class names with attribute selectors. 
-Please verify whether this functions before using it in production. 
-Or, don't use it at all, because 'AI Stinky'. I don't know.
-P.S: Everything else is human made. Seriously. Atleast, AFAIK. I know my changes are. I know Mo's changes are.
-That's basically everything.*/
-
-/* CLASS NAME NOTE: Discord's class names end in a hash that may change (e.g. .contents_c19a55).
-   Hashed classes are replaced with [class*="name_"] attribute selectors, which match on the stable
-   part of the name only. A few selectors are left hashed on purpose (container__*, content__122e4,
-   button__201d5, grid__623de, container_b7e1cb) because their base names are shared by several
-   unrelated elements, so the hash is the only thing telling them apart. If those break after an
-   update, they're the ones to re-inspect. */
-
 /* MESSAGES  - - - - - - - - - - - - - - - - - - - - - */
 [class*="contents_"]>[class*="messageContent_"] {
     background-color: var(--bubblescss-otherbubblecolour);
@@ -33,7 +19,7 @@ That's basically everything.*/
     border-radius: 0px;
 }
 
-[class*="message__"] {
+.message__5126c {
     /* position: absolute; */
     max-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
     min-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
