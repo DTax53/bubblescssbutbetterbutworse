@@ -1,20 +1,8 @@
-
-# bubbles.css but better (but worse)
-### by the Me (nah jk)
-
-# AI DISCLAIMER: AI WAS USED TO HELP ME BECAUSE IF IMA BE FR IDK CSS PROPERTIES N SHIIIII (EVREN THO I ONLY USED AI FOR THE HTML PARSING,,,). I WROTE THE CODE MYSELF THOUGH SO TAKE THAT AS YOU WILL DEPENDING ON WHERE YOU DRAW THE LINE AT THAT OR SOMETHING. THANK YOU. PLEASE DON'T KILL ME AND MY FAMILY.
-
-## Changes:
-- Fixed some really odd change with the first user sent bubble where the corners were incorrectly rounded (how)
-- Finally made the file uploading POS actually match the damn theme properly :3 (AI was used to save time by reading out the HTML for me, and basically hinting at things... I've written the code myself)
-
-## WIP:
-- Edit up forwards bubbles to look a bit less weird (potentially means editing that genuinely abrasive colour scheme to provide better contrast, sorry mo :^{)
-
-# Original Readme contents:
+# bubbles.css but better
 
 honestly i really like the bubbles.css file that Blade04208 created, and i use it religiously all the time, but i kinda felt like making a few adjustments to it because idk i'm just a crybaby who wants everything perfect  
-i made the bubbles a bit taller, changed embeds so they actually adhere to proper margins, and created a left-aligned variant for the people that prefer that
+i made the bubbles a bit taller and changed embeds so they actually adhere to proper margins
+# AI DISCLAIMER: AI was used in a recently merged pull request, not to WRITE any code, but to REVIEW it and suggest changes.
 
 ## installation
 
@@ -31,4 +19,4 @@ download `bubblesbutbetter.theme.css` and put it in your themes folder. alternat
 <a href="https://discord.gg/KEcCnVuTV7"><img alt="discord-singular" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/social/discord-singular_vector.svg"></a>
 
 ## thank you to Blade04208 for doing all this work that i'm shoddily copying trust me i love you
-and also credits to my friend DreariestTax53 for making the embed upload modal work epically
+and also credits to my friend DreariestTax53 for making the embed upload modal work epically and also using ai to murder me
