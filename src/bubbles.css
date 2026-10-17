@@ -319,11 +319,16 @@ AI didn't generate the code for me. */
             left: auto !important;
             right: calc(var(--custom-message-margin-horizontal) - var(--custom-message-avatar-decoration-size) / 2 + var(--custom-message-avatar-size) / 2);
         }
-
+        
         .container_b7e1cb>* {
             justify-self: end !important;
             align-self: end !important;
         }
+        
+        [class*="pollContainer_"] {
+            min-width:auto;
+        }
+        
         [class*="visualMediaItemContainer_"]>div {
             float: right;
         }
@@ -331,7 +336,7 @@ AI didn't generate the code for me. */
         &[class*="hasReply_"] {
             padding-top: 22px !important;
         }
-
+        
         [class*="repliedMessage_"] {
             position: absolute;
             flex-direction: row;
@@ -341,7 +346,7 @@ AI didn't generate the code for me. */
             margin-right: calc(var(--chat-avatar-size) * 1.5 + 12px);
             max-width: calc(100% - var(--custom-guild-list-width)* 2 + 0.15rem);
         }
-
+        
         [class*="repliedMessageClickableSpine_"] {
             right: calc(var(--chat-avatar-size) / 2 * -1 + var(--gutter) * -1 - 4px);
             left: 100%;
@@ -355,7 +360,16 @@ AI didn't generate the code for me. */
             margin-left: 4px;
         }
     }
-
+    .cozy_c19a55.hasThread_c19a55:after {
+        border-radius:unset;
+        border-end-end-radius: 8px;
+        border-inline-start: 0px;
+        border-inline-end: 2px solid var(--spine-default);
+        inset-inline-start: calc(var(--custom-message-margin-horizontal) + var(--chat-avatar-size)/2 - 1px);
+        right: calc(var(--chat-avatar-size) / 2 + 10px);
+        left: auto
+    }
+    
         [class*="buttonContainer_"] {
             /* right: auto; */
             left: 0;
