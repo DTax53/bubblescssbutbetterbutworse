@@ -1,3 +1,7 @@
+/* AI DISCLAIMER: AI was used to help parse HTML in like two occassions, and was used to redo the class selectors
+instead of the previous hardcode. No AI has been used for the actual styling whatsoever. */
+/* someone tell mo i'm sorry - taxy */
+
 /* MESSAGES  - - - - - - - - - - - - - - - - - - - - - */
 [class*="contents_"]>[class*="messageContent_"] {
     background-color: var(--bubblescss-otherbubblecolour);
@@ -46,7 +50,7 @@
 }
 
 
-/* Hi, what is this? - Taxy*/
+/* REACTION ROTATIONS */
 /*
   ._23977d5b7cef7361-reactions, .reactions__23977 {
     margin-bottom: -12px;
@@ -165,11 +169,7 @@
 }
 
 /* the following CSS has been made by my friend DreariestTax53. all credits to him i'm just stealing it >:3c */
-/* No idea why I had '.c19a557985eb7793-contents:has([id^="message-content-Uploader"])' in my query considering it
-literally does not exist in the DOM, so it has been removed. - Taxy*/
-
-/* AI DISCLAIMER: The following content is AI-assisted (through quizzing me and parsing HTML), but I have checked it. 
-AI didn't generate the code for me. */
+/* File uploading dialog that appears under message */
 [class*="wrapper_"]:has([id^="message-content-Uploader"]) {
     /* Hey, look I finally fixed this damn padding! */
     padding-inline-end: 64px;
@@ -178,6 +178,8 @@ AI didn't generate the code for me. */
         background: none !important;
         border-radius: 0 !important;
         padding: 0 !important;
+        /* Weird Web (Firefox) only issue fix */
+        margin-left: auto !important;
     }
 
     [class*="messageContent_"] > [class*="content__"] {
@@ -191,8 +193,15 @@ AI didn't generate the code for me. */
         float: right;
     }
     
-    [class*="file__"] {
-       float: right;
+    /* credit mo for making me think better */
+    [class*="fileWrapper__"] {
+        margin-left: auto;
+    }
+    
+    [class*="fileWrapper__"] > [class*="file"] {
+       margin-left: auto;
+       max-width: 432px;
+       width: 100%;
     }
 
     [class*="avatar_"] {
@@ -248,8 +257,13 @@ AI didn't generate the code for me. */
         border-radius: 0px 10px 10px 0px;
     }
     .container_b7e1cb {
-        margin-top: 0px;
+        margin-top: 4px;
         border-radius: 0px 10px 10px 0px;
+        /* This was me removing your bubble border for images in forwards
+        cus i thought it looked kinda outta place, but hey if you like it,
+        keep it - taxy */
+        /* padding: 0px !important;
+        background: none; */
         max-width: fit-content;
         width: calc(100% - 28px) !important;
         .container__60fa3 {
@@ -262,11 +276,20 @@ AI didn't generate the code for me. */
         }
     }
     [class*="footerContainer__"] {
-    width: fit-content;
-    background-color: var(--bubblescss-forwardlinkcolour);
-    border-radius: 0px 10px 10px 10px;
-    svg>path {
-        fill: var(--bubblescss-forwardtextcolour) !important;
+        width: fit-content;
+        background-color: var(--bubblescss-forwardlinkcolour);
+        border-radius: 0px 10px 10px 10px;
+        svg>path {
+            fill: var(--bubblescss-forwardtextcolour) !important;
+        }
+    }
+    /* I use the Vencord BetterForwards plugin soo I need another rule for its footer */
+    [class*="vc-betterforwards-footer"] {
+        width: fit-content;
+        background-color: var(--bubblescss-forwardlinkcolour);
+        border-radius: 0px 10px 10px 10px;
+        svg>path {
+            fill: var(--bubblescss-forwardtextcolour) !important;
         }
     }
     [class*="headerText__"], [class*="footerText__"] {
@@ -283,7 +306,8 @@ AI didn't generate the code for me. */
     justify-items: end;
     
     [class*="groupStart__"] [class*="messageContent_"] {
-        border-radius: 10px 10px 0px 10px !important; /* mo you goofball how did you goof this up */
+        /* why the hell was this !importanted, stupid me is stupid */
+        border-radius: 10px 10px 0px 10px; /* mo you goofball how did you goof this up */
     }
 
     [class*="message__"] {
@@ -324,11 +348,11 @@ AI didn't generate the code for me. */
             justify-self: end !important;
             align-self: end !important;
         }
-        
+
         [class*="pollContainer_"] {
             min-width:auto;
         }
-        
+
         [class*="visualMediaItemContainer_"]>div {
             float: right;
         }
@@ -360,6 +384,7 @@ AI didn't generate the code for me. */
             margin-left: 4px;
         }
     }
+
     .cozy_c19a55.hasThread_c19a55:after {
         border-radius:unset;
         border-end-end-radius: 8px;
@@ -369,12 +394,12 @@ AI didn't generate the code for me. */
         right: calc(var(--chat-avatar-size) / 2 + 10px);
         left: auto
     }
-    
-        [class*="buttonContainer_"] {
-            /* right: auto; */
-            left: 0;
 
-            .container__040f0 {
+    [class*="buttonContainer_"] {
+        /* right: auto; */
+        left: 0;
+
+        .container__040f0 {
             padding: 0 64px;
             right: auto;
             left: 0px;
@@ -410,18 +435,30 @@ AI didn't generate the code for me. */
         [class*="headerContainer__"] {
             border-radius: 10px 10px 0px 10px;
         }
+        /* Done this way, as forwards have a dingus header container */
         [class*="messageContent_"] {
-            border-radius: 10px 10px 0px 10px;
-        }
-        .container_b7e1cb {
-            margin-top: 0px;
             border-radius: 10px 0px 0px 10px;
+        }
+
+        .container_b7e1cb {
+            margin-top: 4px;
+            border-radius: 10px 0px 0px 10px;
+            /* This was me removing your bubble border for images in forwards
+            cus i thought it looked kinda outta place, but hey if you like it,
+            keep it - taxy */
+            /* padding: 0px !important;
+            background: none; */
             align-items: end;
             align-content: end;
             justify-content: end;
             justify-items: end;
         }
+
         [class*="footerContainer__"] {
+            border-radius: 10px 0px 10px 10px;
+        }
+        /* I use the Vencord BetterForwards plugin soo I need another rule for its footer */
+        [class*="vc-betterforwards-footer"] {
             border-radius: 10px 0px 10px 10px;
         }
     }
