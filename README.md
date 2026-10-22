@@ -1,7 +1,7 @@
 # bubbles.css but better
 
 honestly i really like the bubbles.css file that Blade04208 created, and i use it religiously all the time, but i kinda felt like making a few adjustments to it because idk i'm just a crybaby who wants everything perfect  
-i made the bubbles a bit taller and changed embeds so they actually adhere to proper margins
+i made the bubbles a bit SHORTER* and changed embeds so they actually adhere to proper margins
 # AI DISCLAIMER: AI was used in a recently merged pull request, not to WRITE any code, but to parse HTML to look through element IDs, and for some 'advice' (which I didn't follow straight up). (Tax edited this)
 
 ## installation
