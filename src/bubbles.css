@@ -24,14 +24,12 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
 }
 
 .message__5126c {
-    /* position: absolute; */
     max-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
     min-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
     padding: 2px 64px !important;
 }
 
 [class*="messageListItem__"] [class*="contents_"] {
-    /* position: absolute; */
     max-width: calc(100%) !important;
     min-width: calc(100%) !important;
     justify-self: end;
@@ -49,113 +47,6 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
     max-width: 100% !important;
 }
 
-
-/* REACTION ROTATIONS */
-/*
-  ._23977d5b7cef7361-reactions, .reactions__23977 {
-    margin-bottom: -12px;
-  
-    width: 100% !important;
-
-    bottom: -16px;
-
-  
-    >div {
-      position: relative;
-  
-      ._23977d5b7cef7361-reaction, .reaction__23977,
-      ._23977d5b7cef7361-reactionBtn, .reactionBtn__23977 {
-        backdrop-filter: blur(16px);
-      }
-  
-      &:nth-child(1) {
-        display: none;
-      }
-  
-      &:nth-child(2) {
-        transform: rotate(5deg);
-        top: -50%;
-      }
-  
-      &:nth-child(3) {
-        transform: rotate(-3deg);
-      }
-  
-      &:nth-child(4) {
-        transform: rotate(-7deg);
-      }
-  
-      &:nth-child(5) {
-        transform: rotate(8deg);
-      }
-  
-      &:nth-child(6) {
-        transform: rotate(8deg);
-      }
-  
-      &:nth-child(7) {
-        transform: rotate(17deg);
-      }
-  
-      &:nth-child(8) {
-        transform: rotate(9deg);
-      }
-  
-      &:nth-child(9) {
-        transform: rotate(2deg);
-      }
-  
-      &:nth-child(10) {
-        transform: rotate(5deg);
-        top: -50%;
-      }
-  
-      &:nth-child(11) {
-        transform: rotate(-3deg);
-      }
-  
-      &:nth-child(12) {
-        transform: rotate(-7deg);
-      }
-  
-      &:nth-child(13) {
-        transform: rotate(8deg);
-      }
-  
-      &:nth-child(14) {
-        transform: rotate(8deg);
-      }
-  
-      &:nth-child(15) {
-        transform: rotate(-17deg);
-      }
-  
-      &:nth-child(16) {
-        transform: rotate(-3deg);
-      }
-  
-      &:nth-child(17) {
-        transform: rotate(2deg);
-      }
-  
-      &:nth-child(18) {
-        transform: rotate(-3deg);
-      }
-  
-      &:nth-child(19) {
-        transform: rotate(-7deg);
-      }
-  
-      &:nth-child(20) {
-        transform: rotate(-5deg);
-      }
-  
-      &:nth-child(21) {
-        transform: rotate(-1deg);
-      }
-    }
-  }
-  */
 [class*="reactionInner__"][aria-label*=", 1 "] [class*="reactionCount__"] {
     display: none !important;
 }
@@ -224,38 +115,46 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
     padding: var(--bubblescss-bubblepadding) !important;
     box-sizing: content-box;
     word-wrap: break-word;
+
     span, code, [class*="embedAuthorName__"], ::marker, [class*="blockquoteDivider__"], .grid__623de div {
         color: var(--bubblescss-forwardtextcolour) !important;
     }
+
     a span {
         color: var(--bubblescss-forwardlinkcolour) !important;
     }
+
     .container__60fa3, [class*="embed__"], .button__201d5, code, [class*="blockquoteDivider__"] {
         background-color: var(--bubblescss-forwardembedcolour);
     }
 }
+
 .container__122e4 {
     [class*="quote__"] {
-    background-color: rgba(0,0,0,0) !important;
-    border-radius: 0px !important;
-    width: 0px !important;
-    -webkit-margin-end: 0px !important;
-    margin-inline-end: 0px !important;
+        background-color: rgba(0,0,0,0) !important;
+        border-radius: 0px !important;
+        width: 0px !important;
+        -webkit-margin-end: 0px !important;
+        margin-inline-end: 0px !important;
     }
 }
+
 .content__122e4 {
     [class*="headerContainer__"] {
-    width: fit-content;
-    background-color: var(--bubblescss-forwardiconcolour);
-    border-radius: 10px 10px 10px 0px;
-    margin-bottom: 4px;
-    svg>path {
-        fill: var(--bubblescss-forwardtextcolour) !important;
+        width: fit-content;
+        background-color: var(--bubblescss-forwardiconcolour);
+        border-radius: 10px 10px 10px 0px;
+        margin-bottom: 4px;
+        
+        svg>path {
+            fill: var(--bubblescss-forwardtextcolour) !important;
         }
     }
+
     [class*="messageContent_"] {
         border-radius: 0px 10px 10px 0px;
     }
+
     .container_b7e1cb {
         margin-top: 4px;
         border-radius: 0px 10px 10px 0px;
@@ -266,32 +165,39 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
         background: none; */
         max-width: fit-content;
         width: calc(100% - 28px) !important;
+
         .container__60fa3 {
             align-self: end !important;
             max-width: 566px;
             width: calc(100% - 34px);
         }
+
         .container__4d95d {
             min-width: unset;
         }
     }
+
     [class*="footerContainer__"] {
         width: fit-content;
         background-color: var(--bubblescss-forwardlinkcolour);
         border-radius: 0px 10px 10px 10px;
+
         svg>path {
             fill: var(--bubblescss-forwardtextcolour) !important;
         }
     }
+
     /* I use the Vencord BetterForwards plugin soo I need another rule for its footer */
     [class*="vc-betterforwards-footer"] {
         width: fit-content;
         background-color: var(--bubblescss-forwardlinkcolour);
         border-radius: 0px 10px 10px 10px;
+
         svg>path {
             fill: var(--bubblescss-forwardtextcolour) !important;
         }
     }
+
     [class*="headerText__"], [class*="footerText__"] {
         font-weight: inherit;
         color: var(--bubblescss-forwardtextcolour) !important;
@@ -311,10 +217,9 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
     }
 
     [class*="message__"] {
-            /* position: absolute; */
-            max-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
-            min-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
-            padding: 2px 64px !important;
+        max-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
+        min-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
+        padding: 2px 64px !important;
 
         [class*="header_"] {
             text-align: right;
@@ -322,7 +227,6 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
         }
         
         [class*="contents_"] {
-            /* position: absolute; */
             max-width: calc(100%) !important;
             min-width: calc(100%) !important;
             justify-items: end;
@@ -396,7 +300,6 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
     }
 
     [class*="buttonContainer_"] {
-        /* right: auto; */
         left: 0;
 
         .container__040f0 {
@@ -415,6 +318,7 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
 [class*="repliedTextContent_"] {
     border-radius: 0px;
 }
+
 /* the following CSS has been made by my friend DreariestTax53. all credits to him i'm just stealing it >:3c */
 [class*="contents_"]:has([id^="message-content-Uploader"]) {
     align-items: end;
@@ -431,10 +335,12 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
         align-content: end;
         justify-content: end;
     }
+
     .content__122e4 {
         [class*="headerContainer__"] {
             border-radius: 10px 10px 0px 10px;
         }
+
         /* Done this way, as forwards have a dingus header container */
         [class*="messageContent_"] {
             border-radius: 10px 0px 0px 10px;
@@ -457,6 +363,7 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
         [class*="footerContainer__"] {
             border-radius: 10px 0px 10px 10px;
         }
+
         /* I use the Vencord BetterForwards plugin soo I need another rule for its footer */
         [class*="vc-betterforwards-footer"] {
             border-radius: 10px 0px 10px 10px;
