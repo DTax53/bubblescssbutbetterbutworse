@@ -23,7 +23,7 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
     border-radius: 0px;
 }
 
-[class*="message__"] {
+[class*="message__5126c"] {
     /* position: absolute; */
     max-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
     min-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
@@ -334,6 +334,11 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
             justify-self: end !important;
             align-self: end !important;
         }
+
+        [class*="pollContainer_"] {
+            min-width:auto;
+        }
+
         [class*="visualMediaItemContainer_"]>div {
             float: right;
         }
@@ -366,11 +371,21 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
         }
     }
 
-        [class*="buttonContainer_"] {
-            /* right: auto; */
-            left: 0;
+    .cozy_c19a55.hasThread_c19a55:after {
+        border-radius:unset;
+        border-end-end-radius: 8px;
+        border-inline-start: 0px;
+        border-inline-end: 2px solid var(--spine-default);
+        inset-inline-start: calc(var(--custom-message-margin-horizontal) + var(--chat-avatar-size)/2 - 1px);
+        right: calc(var(--chat-avatar-size) / 2 + 10px);
+        left: auto
+    }
 
-            .container__040f0 {
+    [class*="buttonContainer_"] {
+        /* right: auto; */
+        left: 0;
+
+        .container__040f0 {
             padding: 0 64px;
             right: auto;
             left: 0px;
