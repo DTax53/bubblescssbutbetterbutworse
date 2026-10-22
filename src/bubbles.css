@@ -251,8 +251,13 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
         border-radius: 0px 10px 10px 0px;
     }
     .container_b7e1cb {
-        margin-top: 0px;
+        margin-top: 4px;
         border-radius: 0px 10px 10px 0px;
+        /* This was me removing your bubble border for images in forwards
+        cus i thought it looked kinda outta place, but hey if you like it,
+        keep it - taxy */
+        /* padding: 0px !important;
+        background: none; */
         max-width: fit-content;
         width: calc(100% - 28px) !important;
         .container__60fa3 {
@@ -429,12 +434,13 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
             border-radius: 10px 0px 0px 10px;
         }
         .container_b7e1cb {
-            margin-top: 0px;
-            /* Unifying this with the rest of the theme, because 
-            honestly i feel like whatever you cooked was Genuinely Odd
-            i'm sorry - taxy */
-            /* border-radius: 10px 0px 0px 10px; */
-            padding: 0px !important;
+            margin-top: 4px;
+            border-radius: 10px 0px 0px 10px;
+            /* This was me removing your bubble border for images in forwards
+            cus i thought it looked kinda outta place, but hey if you like it,
+            keep it - taxy */
+            /* padding: 0px !important;
+            background: none; */
             background: none;
             align-items: end;
             align-content: end;
