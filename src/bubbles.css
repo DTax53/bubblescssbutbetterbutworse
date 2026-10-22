@@ -23,7 +23,7 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
     border-radius: 0px;
 }
 
-[class*="message__5126c"] {
+.message__5126c {
     /* position: absolute; */
     max-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
     min-width: calc(100% - var(--custom-message-margin-left-content-cozy) - 64px) !important;
@@ -343,7 +343,7 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
             left: auto !important;
             right: calc(var(--custom-message-margin-horizontal) - var(--custom-message-avatar-decoration-size) / 2 + var(--custom-message-avatar-size) / 2);
         }
-
+        
         .container_b7e1cb>* {
             justify-self: end !important;
             align-self: end !important;
@@ -360,7 +360,7 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
         &[class*="hasReply_"] {
             padding-top: 22px !important;
         }
-
+        
         [class*="repliedMessage_"] {
             position: absolute;
             flex-direction: row;
@@ -370,7 +370,7 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
             margin-right: calc(var(--chat-avatar-size) * 1.5 + 12px);
             max-width: calc(100% - var(--custom-guild-list-width)* 2 + 0.15rem);
         }
-
+        
         [class*="repliedMessageClickableSpine_"] {
             right: calc(var(--chat-avatar-size) / 2 * -1 + var(--gutter) * -1 - 4px);
             left: 100%;
