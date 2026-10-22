@@ -1,16 +1,6 @@
-/* AI DISCLAIMER: The following comment is AI-generated and may be inaccurate. 
-So is the replacement of the hashed class names with attribute selectors. 
-Please verify whether this functions before using it in production. 
-Or, don't use it at all, because 'AI Stinky'. I don't know.
-P.S: Everything else is human made. Seriously. Atleast, AFAIK. I know my changes are. I know Mo's changes are.
-That's basically everything.*/
-
-/* CLASS NAME NOTE: Discord's class names end in a hash that may change (e.g. .contents_c19a55).
-   Hashed classes are replaced with [class*="name_"] attribute selectors, which match on the stable
-   part of the name only. A few selectors are left hashed on purpose (container__*, content__122e4,
-   button__201d5, grid__623de, container_b7e1cb) because their base names are shared by several
-   unrelated elements, so the hash is the only thing telling them apart. If those break after an
-   update, they're the ones to re-inspect. */
+/* AI DISCLAIMER: AI was used to help parse HTML in like two occassions, and was used to redo the class selectors
+instead of the previous hardcode. No AI has been used for the actual styling whatsoever. */
+/* someone tell mo i'm sorry - taxy */
 
 /* MESSAGES  - - - - - - - - - - - - - - - - - - - - - */
 [class*="contents_"]>[class*="messageContent_"] {
@@ -60,7 +50,7 @@ That's basically everything.*/
 }
 
 
-/* Hi, what is this? - Taxy*/
+/* REACTION ROTATIONS */
 /*
   ._23977d5b7cef7361-reactions, .reactions__23977 {
     margin-bottom: -12px;
@@ -179,11 +169,7 @@ That's basically everything.*/
 }
 
 /* the following CSS has been made by my friend DreariestTax53. all credits to him i'm just stealing it >:3c */
-/* No idea why I had '.c19a557985eb7793-contents:has([id^="message-content-Uploader"])' in my query considering it
-literally does not exist in the DOM, so it has been removed. - Taxy*/
-
-/* AI DISCLAIMER: The following content is AI-assisted (through quizzing me and parsing HTML), but I have checked it. 
-AI didn't generate the code for me. */
+/* File uploading dialog that appears under message */
 [class*="wrapper_"]:has([id^="message-content-Uploader"]) {
     /* Hey, look I finally fixed this damn padding! */
     padding-inline-end: 64px;
@@ -205,7 +191,7 @@ AI didn't generate the code for me. */
         float: right;
     }
     
-    [class*="file__"] {
+    [class*="fileWrapper__"] {
        float: right;
     }
 
@@ -276,11 +262,20 @@ AI didn't generate the code for me. */
         }
     }
     [class*="footerContainer__"] {
-    width: fit-content;
-    background-color: var(--bubblescss-forwardlinkcolour);
-    border-radius: 0px 10px 10px 10px;
-    svg>path {
-        fill: var(--bubblescss-forwardtextcolour) !important;
+        width: fit-content;
+        background-color: var(--bubblescss-forwardlinkcolour);
+        border-radius: 0px 10px 10px 10px;
+        svg>path {
+            fill: var(--bubblescss-forwardtextcolour) !important;
+        }
+    }
+    /* I use the Vencord BetterForwards plugin soo I need another rule for its footer */
+    [class*="vc-betterforwards-footer"] {
+        width: fit-content;
+        background-color: var(--bubblescss-forwardlinkcolour);
+        border-radius: 0px 10px 10px 10px;
+        svg>path {
+            fill: var(--bubblescss-forwardtextcolour) !important;
         }
     }
     [class*="headerText__"], [class*="footerText__"] {
@@ -297,7 +292,8 @@ AI didn't generate the code for me. */
     justify-items: end;
     
     [class*="groupStart__"] [class*="messageContent_"] {
-        border-radius: 10px 10px 0px 10px !important; /* mo you goofball how did you goof this up */
+        /* why the hell was this !importanted, stupid me is stupid */
+        border-radius: 10px 10px 0px 10px; /* mo you goofball how did you goof this up */
     }
 
     [class*="message__"] {
@@ -410,18 +406,28 @@ AI didn't generate the code for me. */
         [class*="headerContainer__"] {
             border-radius: 10px 10px 0px 10px;
         }
+        /* Done this way, as forwards have a dingus header container */
         [class*="messageContent_"] {
-            border-radius: 10px 10px 0px 10px;
+            border-radius: 10px 0px 0px 10px;
         }
         .container_b7e1cb {
             margin-top: 0px;
-            border-radius: 10px 0px 0px 10px;
+            /* Unifying this with the rest of the theme, because 
+            honestly i feel like whatever you cooked was Genuinely Odd
+            i'm sorry - taxy */
+            /* border-radius: 10px 0px 0px 10px; */
+            padding: 0px !important;
+            background: none;
             align-items: end;
             align-content: end;
             justify-content: end;
             justify-items: end;
         }
         [class*="footerContainer__"] {
+            border-radius: 10px 0px 10px 10px;
+        }
+        /* I use the Vencord BetterForwards plugin soo I need another rule for its footer */
+        [class*="vc-betterforwards-footer"] {
             border-radius: 10px 0px 10px 10px;
         }
     }
