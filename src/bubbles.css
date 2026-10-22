@@ -192,6 +192,10 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
     }
     
     /* credit mo for making me think better */
+    [class*="fileWrapper__"] {
+        width: 100%;
+    }
+
     [class*="fileWrapper__"] > [class*="file"] {
        margin-left: auto;
        max-width: 432px;
@@ -433,6 +437,7 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
         [class*="messageContent_"] {
             border-radius: 10px 0px 0px 10px;
         }
+
         .container_b7e1cb {
             margin-top: 4px;
             border-radius: 10px 0px 0px 10px;
@@ -447,6 +452,7 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
             justify-content: end;
             justify-items: end;
         }
+
         [class*="footerContainer__"] {
             border-radius: 10px 0px 10px 10px;
         }
