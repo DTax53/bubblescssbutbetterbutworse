@@ -173,6 +173,8 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
 [class*="wrapper_"]:has([id^="message-content-Uploader"]) {
     /* Hey, look I finally fixed this damn padding! */
     padding-inline-end: 64px;
+    /* Weird Web (Firefox) only issue fix */
+    margin-left: auto !important;
 
     [class*="messageContent_"] {
         background: none !important;
