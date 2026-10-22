@@ -6,7 +6,7 @@
  * @source https://github.com/modraws/bubblescssbutbetter
  */
 
-@import url("https://raw.githubusercontent.com/modraws/bubblescssbutbetter/refs/heads/main/src/bubbles.css");
+@import url("https://raw.githubusercontent.com/DTax53/bubblescssbutbetterbutworse/refs/heads/main/src/bubbles.css");
 
 :root {
 	--bubblescss-otherbubblecolour: var(--background-mod-subtle);
