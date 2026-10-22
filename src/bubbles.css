@@ -191,8 +191,15 @@ instead of the previous hardcode. No AI has been used for the actual styling wha
         float: right;
     }
     
+    /* credit mo for making me think better */
     [class*="fileWrapper__"] {
+       float: none;
+       width: 100%;
+    }
+
+    [class*="fileWrapper__"] > [class*="file"] {
        float: right;
+       max-width: 432px;
     }
 
     [class*="avatar_"] {
